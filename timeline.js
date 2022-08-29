@@ -41,12 +41,13 @@ function scrollHandler(e) {
     // console.log(item);
     const rect = item.getBoundingClientRect(); //     console.log(rect);
 
-    if (rect.top + item.offsetHeight / 5 < targetY) {
+    if (rect.top + item.offsetHeight / 2 < targetY) {
       item.classList.add('show-me');
     }
   }); // console.log(up, down);
 
   prevScrollY = window.scrollY;
+
 }
 
 scrollHandler();
